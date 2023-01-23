@@ -1,0 +1,37 @@
+#titulo-productos{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 50px;
+    color: chocolate;
+    text-shadow: 5px 5px 7px #000;
+}
+.productos div{
+    padding: 20px;
+    width: 97%;
+    
+}
+
+.productos-detalle{
+    display: flex;
+    width: 100%;
+}
+.productos-detalle img{
+    width: 500px;
+    height: 300px;
+}
+
+.productos-detalle-derecha img{
+    float: right;
+    width: 500px;
+    height: 300px;
+}
+
+
+.productos-detalle p, .productos-detalle-derecha p{
+   text-align: center;
+   font-family: 'Caveat', cursive;
+   font-size: 30px;
+   color: rgb(110, 48, 4);
+
+}
