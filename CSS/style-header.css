@@ -1,12 +1,17 @@
-html{
+/*Estilos del header*/
+html {
     scroll-behavior: smooth;
 }
-header{
+header {
     background-color: rgb(31, 29, 29);
     color: aliceblue;
     padding-bottom: .5px;
 }
-header h1{
+header h1,
+#titulo-productos,
+#titulo-cumpleaños,
+#titulo-sobreNosotros,
+#titulo-ubicacion {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: lighter;
@@ -14,37 +19,37 @@ header h1{
     color: chocolate;
     text-shadow: 5px 5px 7px #000;
 }
-header a{
+header a {
     font-size: 17px;
 }
-.iconos{
+.iconos {
     display: flex;
     padding: 10px;
 }
-.iconos img{
+.iconos img {
     width: 30px;
     background-color: aliceblue;
     border-radius: 50%;
 }
-.iconos a{
+.iconos a {
     position: relative;
     bottom: 10px;
 }
-.iconos a:hover{
+.iconos a:hover {
     transition: .5s;
     color: yellow;
     font-weight: bold;
 }
-.iconos div{
+.iconos div {
     margin: 10px;
 }
-.lista{
+.lista {
     position: relative;
     left: 270px;
     height: 20px;
-    margin: 5px 0px 0px 10px;    
+    margin: 5px 0px 0px 10px;
 }
-.lista:hover{
+.lista:hover {
     font-weight: bold;
     color: yellow;
 }
@@ -53,10 +58,128 @@ header a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-
-#detalle-header{
+#detalle-header {
     text-align: center;
     font-size: 25px;
     padding: 15px;
     line-height: 0;
+}
+
+/*Estilos seccion productos*/
+
+.productos div{
+    padding: 20px;
+    width: 97%;
+    
+}
+.productos-detalle{
+    display: flex;
+    width: 100%;
+}
+.productos-detalle img{
+    width: 500px;
+    height: 300px;
+}
+.productos-detalle-derecha img{
+    float: right;
+    width: 500px;
+    height: 300px;
+}
+.productos-detalle p, .productos-detalle-derecha p{
+   text-align: center;
+   font-family: 'Caveat', cursive;
+   font-size: 30px;
+   color: rgb(110, 48, 4);
+}
+
+/*Estilos de la seccion cumpleaños*/
+.cumpleaños{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.cumpleaños img{
+    width: 100%;
+    height: 240px;
+    border-radius: 10px;
+}
+.cumpleaños div{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f7f3f3; 
+    text-align: center;
+    height: 650px;
+}
+.cumpleaños div:hover{
+    padding: 12px;
+    background-color: #dbdada; 
+}
+#encabezado, #precio{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#detalle-cumpleaños{
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+}
+button{
+    padding: 10px;
+    width: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(188, 128, 245);    
+}
+button:hover{
+    transition: .5s;
+    padding: 12px;
+    width: 110px;
+    border: 3px;
+    background-color: rgb(201, 153, 245);
+}
+
+
+/*Estilos de la seccion "Sobre Nosotros"*/
+.sobreNosotros {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    margin: 10px;
+}
+.sobreNosotros img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.sobreNosotros p {
+    width: 97%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+}
+
+/*Estilos del footer*/
+.footer{
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.footer img{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.footer img:hover{
+    transition: .5s;
+    background-color: chocolate;
+    width: 55px;
+    height: 55px;
+    rotate: 15deg;
 }
