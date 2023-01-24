@@ -1,0 +1,48 @@
+@media (max-width:768px){
+    /*Estilos para el header*/
+    .iconos{
+        display: flex;
+        text-align: center;
+        padding: 0;
+        justify-content: center;
+    }
+    .lista{
+        display: none;
+    }
+   #detalle-header{
+        font-size: 15px;
+    }
+
+    /*Estilos para la seccion productos*/
+    .productos div{
+        padding: 5px;
+    }
+    .productos p{
+        font-size: 20px;
+    }
+
+    /*Estilos para la seccion cumpleaños*/
+    .cumpleaños{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    button{
+        position: relative;
+        top: 45px;
+    }
+
+    /*Estilos de la seccion sobre nosotros*/
+    .sobreNosotros {
+        display: block;
+    }
+    .sobreNosotros img {
+        float: left;
+        width: 50%;
+        margin: 10px;
+    }
+
+    /*Estilos footer*/
+    .footer{
+        padding: 30px;
+    }
+}
