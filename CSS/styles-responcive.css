@@ -1,4 +1,5 @@
-@media (max-width:768px){
+/*Estilos tamaño celular*/
+@media (max-width:1024px){
     /*Estilos para el header*/
     .iconos{
         display: flex;
@@ -44,5 +45,50 @@
     /*Estilos footer*/
     .footer{
         padding: 30px;
+    }
+}
+
+/*Estilos tamaño celular*/
+@media (max-width:550px){
+    /*Estilos para el header*/
+    header{
+        padding: 10px;
+    }
+    .iconos, .lista{
+        display: none;
+    }    
+   #detalle-header{
+        font-size: 20px;
+        display: block;
+        line-height: 20px;
+    }
+
+    /*Estilos para la seccion productos*/
+    #titulo-productos, .titulo-cumpleaños{
+        font-size: 35px;
+    }
+    .productos-detalle, .productos-detalle-derecha, .titulo-sobreNosotros{
+        display: block;
+    }
+    .productos img{
+        width: 100%;
+        height: 300px;
+    }
+    .productos div{
+        padding: 0px;
+    }
+    .productos {
+        font-size: 20px;
+    }
+
+    /*Estilos para la seccion cumpleaños*/
+    .cumpleaños{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    /*Estilos de la seccion sobre nosotros*/
+    .sobreNosotros {
+        display: block;
     }
 }
